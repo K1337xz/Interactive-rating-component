@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.firststar{
+    background-image: url(images/icon-star.svg);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border: 1px solid hsl(216, 12%, 54%);
+    border-radius: 50%;
+    background-position: center;
+    background-color: hsl(216, 12%, 54%);
+    margin-top: 4;
+}
+.container{
+    border-radius: 5%;
+    background-color: hsl(213, 19%, 18%);
+    height: 500px;
+    width: 500px;
+}
+.content h1 {
+    color:hsl(213, 19%, 18%);
+} 
