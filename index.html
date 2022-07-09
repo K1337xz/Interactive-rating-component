@@ -24,8 +24,8 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
     <div class="ratio">
-      <div class="num"><p class="nums" id="1">1</p></div>
-      <div class="num"><p class="nums" id ='2'>2</p></div>
+      <div class="num"><p class="nums">1</p></div>
+      <div class="num"><p class="nums">2</p></div>
       <div class="num"><p class="nums">3</p></div>
       <div class="num"><p class="nums">4</p></div>
       <div class="num"><p class="nums">5</p></div>
@@ -48,12 +48,14 @@
   </div>
 -->
 <script>
-  const numbers = document.querySelectorAll('.nums');
+  const numbers = document.querySelectorAll('.num > p');
   const numArr = [... numbers];
+  const one = 1;
+  let found;
   const btn = document.querySelector('.submitButton');
   function pickNumber(){
-    
-  }
+     
+    }
   numbers.forEach(num => num.addEventListener('click', pickNumber));
 </script>
 </body>
