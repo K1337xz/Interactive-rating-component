@@ -6,7 +6,6 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +24,11 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
     <div class="ratio">
-      <div class="num"><p>1</p></div>
-      <div class="num"><p>2</p></div>
-      <div class="num"><p>3</p></div>
-      <div class="num"><p>4</p></div>
-      <div class="num"><p>5</p></div>
+      <div class="num"><p class="nums" id="1">1</p></div>
+      <div class="num"><p class="nums" id ='2'>2</p></div>
+      <div class="num"><p class="nums">3</p></div>
+      <div class="num"><p class="nums">4</p></div>
+      <div class="num"><p class="nums">5</p></div>
     </div>
     <input type="submit" value="SUBMIT" id="button" class="submitButton"/>
   </div>
@@ -39,7 +38,7 @@
       <p class="selectText">You selected 5 out of 5</p>
       <h1>Thank you!</h1>
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
-        don’t hesitate to get in touch! </p>
+        don't hesitate to get in touch! </p>
     </div>
   </div>
 </main>
@@ -47,6 +46,15 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
--->f
+-->
+<script>
+  const numbers = document.querySelectorAll('.nums');
+  const numArr = [... numbers];
+  const btn = document.querySelector('.submitButton');
+  function pickNumber(){
+    
+  }
+  numbers.forEach(num => num.addEventListener('click', pickNumber));
+</script>
 </body>
 </html>
