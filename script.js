@@ -23,7 +23,7 @@
   function thanksState() {
     firstStar.style.setProperty('display', 'none');
     content.style.setProperty('display', 'none');
-    thankState.style.setProperty('visibility', 'visible');
+    thankState.style.setProperty('display', 'flex');
     text.innerHTML = `You selected ${num} out of 5`;
   } 
   btn.addEventListener('click', thanksState);
