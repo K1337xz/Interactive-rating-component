@@ -13,12 +13,11 @@
   }
   function activeNumber(e){
     num = this.id;
-    if(!clicked){
-      clicked = true;
+    if(this.classList.contains('active_number')) return
+     for(let j = 0; j < numbers.length; j++) {
+        numbers[j].classList.remove('active_number');
+     }
       this.classList.add('active_number');
-      ratio.style.setProperty('pointer-events', 'none');
-      
-    }
   }    
   function thanksState() {
     firstStar.style.setProperty('display', 'none');
